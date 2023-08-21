@@ -1,2 +1,4 @@
 # This file lists all the dependencies needed for your tool to run smoothly.
-python-nmap==0.6.1 scapy psutil
+python-nmap==0.6.1
+Sniffer dependencies
+scapy==2.4.3 psutil==5.7.2
