@@ -1,2 +1,2 @@
 # This file lists all the dependencies needed for your tool to run smoothly.
-python-nmap scapy psutil
+python-nmap==0.6.1 scapy psutil
