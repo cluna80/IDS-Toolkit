@@ -1,0 +1,37 @@
+Specification for Intrusion Detection System Toolkit
+
+Introduction:
+The Intrusion Detection System (IDS) Toolkit for SuperAGI is a Python-based package that provides two main tools: NMAP and Packet Sniffer. The toolkit is designed to detect and analyze network intrusions, providing a robust defense mechanism for your system.
+
+Files:
+1. __init__.py: An empty file that allows Python to recognize the repository as a package.
+
+2. NMAP.py: Contains the code for the NMAP tool. NMAP (Network Mapper) is a free and open source utility for network discovery and security auditing. It will include classes and methods for scanning hosts, services, and networks to gather information about network infrastructure and vulnerabilities.
+
+3. SNIFFER.py: Contains the code for the Packet Sniffer tool. A Packet Sniffer is a program that can intercept and log traffic that passes over a digital network. It will include classes and methods for capturing, filtering, and analyzing network packets.
+
+4. IDS_toolkit.py: This file will contain the toolkit's name and description, a list of all tools, and the configuration details for each tool. It will include a main function to initialize and run the tools based on the configuration.
+
+5. requirements.txt: Lists all the dependencies required for the toolkit to run. This includes non-standard Python libraries that need to be installed.
+
+Core Classes, Functions, and Methods:
+1. NMAP.py:
+   - Class `NMAPScanner`: Handles the scanning process.
+   - Method `scan()`: Performs the actual network scanning.
+
+2. SNIFFER.py:
+   - Class `PacketSniffer`: Handles the packet sniffing process.
+   - Method `capture()`: Captures network packets.
+   - Method `filter()`: Filters captured packets based on user-defined rules.
+   - Method `analyze()`: Analyzes filtered packets for potential intrusions.
+
+3. IDS_toolkit.py:
+   - Function `initialize()`: Initializes the tools based on the configuration.
+   - Function `run()`: Runs the tools and handles the output.
+
+Non-standard Dependencies:
+1. python-nmap: A Python library that helps in using nmap port scanner. It allows to easily manipulate nmap scan results and will be a perfect tool for systems administrators.
+2. scapy: A powerful Python-based interactive packet manipulation program and library. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, match requests and replies, and much more. It is designed to allow fast packet prototyping by using default values that work.
+3. psutil: A cross-platform library used to access system details and process utilities. It is useful mainly for system monitoring, profiling, limiting process resources and the management of running processes.
+
+All these dependencies will be listed in the requirements.txt file for easy installation.
